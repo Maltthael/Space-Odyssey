@@ -13,11 +13,11 @@ It includes basic features like user registration, login, and form validation.
 
 ## ⚙️ Tech Stack
 
-- Python  
-- Django  
-- HTML  
-- CSS  
-- Bootstrap  
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-4.x-green?logo=django&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML-5-orange?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS-3-blue?logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap&logoColor=white)
 
 ---
 
