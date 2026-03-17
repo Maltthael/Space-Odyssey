@@ -46,7 +46,7 @@ def cadastro(request):
         if form.is_valid():
             nome = form['nome_cadastro'].value()
             email = form['email'].value()
-            senha = form['senha'].value()
+            senha = form['senha_1'].value()
 
             if User.objects.filter(username=nome).exists():
                 messages.error(request, 'Usuário já existente')

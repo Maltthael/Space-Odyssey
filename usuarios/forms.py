@@ -50,7 +50,7 @@ class CadastroForms(forms.Form):
             )
         )
         
-        senha=forms.CharField(
+        senha_1=forms.CharField(
         label="Senha",
         required=True,
         max_length=70,
@@ -83,17 +83,17 @@ class CadastroForms(forms.Form):
             if ' ' in nome:
                 raise forms.ValidationError('Espaços não são permitidos nesse campo')
             else:
-                return nome  
+                return nome 
             
         
             
             
-        def clean_senha(self):
-            senha = self.cleaned_data.get('senha')
-            senha_2 = self.cleaned_data.get('senha_2')
+        def clean_senha_2(self):
+            senha_1 = self.cleaned_data.get("senha_1")
+            senha_2 = self.cleaned_data.get("senha_2")
             
-            if senha and senha_2:
-                if senha  != senha_2:
+            if senha_1 and senha_2:
+                if senha_1 != senha_2:
                     raise forms.ValidationError("Senhas não são iguais")
                 else:
                     return senha_2
